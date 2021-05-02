@@ -36,6 +36,8 @@ export class UserService {
 
     findElem.nome = user.nome;
     findElem.idade = user.idade;
+    findElem.emailMain = user.emailMain;
+    findElem.emailAlternative = user.emailAlternative;
     findElem.cargo = user.cargo;
 
     this.users$.next(this.users);

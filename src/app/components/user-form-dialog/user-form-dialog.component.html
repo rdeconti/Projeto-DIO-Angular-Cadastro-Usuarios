@@ -17,6 +17,20 @@
         </div>
         <div class="mt-5">
             <mat-form-field class="fullWidth" appearance="outline">
+                <mat-label>Email Principal *</mat-label>
+                <input matInput type="string" name="emailMain" formControlName="emailMain" />
+                <mat-error *ngIf="formInstance.controls['emailMain']?.errors?.required">campo requerido</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="mt-5">
+            <mat-form-field class="fullWidth" appearance="outline">
+                <mat-label>Email Alternativo *</mat-label>
+                <input matInput type="string" name="emailAternative" formControlName="emailAternative" />
+                <mat-error *ngIf="formInstance.controls['emailAlternative']?.errors?.required">campo requerido</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="mt-5">
+            <mat-form-field class="fullWidth" appearance="outline">
                 <mat-label>Cargo *</mat-label>
                 <mat-select name="cargo" formControlName="cargo">
                     <mat-option value="Caixa">Caixa</mat-option>

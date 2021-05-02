@@ -23,7 +23,7 @@ export class UserListComponent implements OnInit, OnDestroy, AfterViewInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  public displayedColumns: string[] = ['nome', 'idade', 'cargo'];
+  public displayedColumns: string[] = ['nome', 'idade', 'email principal', 'email alternativo', 'cargo'];
   public columnsToDisplay: string[] = [...this.displayedColumns, 'actions'];
 
   public columnsFilters = {};
