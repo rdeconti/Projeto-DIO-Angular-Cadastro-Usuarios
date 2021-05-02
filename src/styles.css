@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.matMenu {
+    width: 200px !important;
+    padding: 10px;
+}
+
+.btn-filter-action {
+    font-size: 0.75rem;
+    width: 80px;
+}
+
+input,
+select {
+    font-size: 0.8rem;
+    height: 25px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 10px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-justify-left {
+    justify-content: left;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-align-left {
+    align-items: left;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-space-between {
+    justify-content: space-between;
+}
+
+.flex-justify-space-around {
+    justify-content: space-around;
+}
+
+.title1 {
+    font-size: 1rem;
+    font-weight: 700px;
+}
+
+.title2 {
+    font-size: 0.8rem;
+    font-weight: 500px;
+}
+
+.text-error {
+    font-size: 0.7rem;
+    color: red;
+}
+
+.bg_logo {
+    background-color: #252525;
+}

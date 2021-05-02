@@ -1,0 +1,116 @@
+<!-- Toolbar -->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Cadastro de Usuários</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- Table of Users -->
+<div class="mat-elevation-z8">
+
+    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+        <ng-container *ngFor="let column of displayedColumns" [matColumnDef]="column">
+            <th mat-header-cell *matHeaderCellDef>
+                <div style="display: flex; align-items: center;">
+                    <span mat-sort-header>{{column}}</span>
+                    <button mat-icon-button>
+                      <mat-icon mat-icon-button color="primary" [matMenuTriggerFor]="menu"
+                        [matMenuTriggerData]="{columnName: column}">filter_list </mat-icon>
+                    </button>
+                </div>
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
+        </ng-container>
+
+        <ng-container [matColumnDef]="'actions'">
+
+            <th mat-header-cell *matHeaderCellDef>
+                MANUTENÇÕES
+                <button mat-button color="accent" (click)="add()">INCLUIR</button>
+                <!--
+                  <button mat-icon-button (click)="add()">
+                    <mat-icon mat-icon-button color='primary'>INCLUIR</mat-icon>
+                  </button>
+                -->
+            </th>
+
+            <td mat-cell *matCellDef="let element">
+                <button mat-button color="accent" (click)="edit(element)">ALTERAR</button>
+                <button mat-button color="accent" (click)="delete(element['id'])">EXCLUIR</button>
+              <!--
+                <button mat-icon-button (click)="edit(element)">
+                  <mat-icon mat-icon-button color='primary'>ALTERAR</mat-icon>
+                </button>
+                <button mat-icon-button (click)="delete(element['id'])">
+                  <mat-icon mat-icon-button color="warn">EXCLUIR</mat-icon>
+                </button>
+              -->
+
+            </td>
+
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+
+    </table>
+
+    <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 50]" showFirstLastButtons></mat-paginator>
+
+</div>
+
+<!-- menu for column filtering-->
+<mat-menu #menu="matMenu" class="matMenu">
+
+    <ng-template matMenuContent let-dataColumnName="columnName">
+
+        <div class="flex-column" (click)="$event.stopPropagation();">
+
+            <div class="mb-5">
+
+                <mat-form-field class="fullWidth" appearance="outline">
+
+                    <mat-label>Escolha o filtro *</mat-label>
+
+                    <mat-select #selectedOperationFilter [value]="'contains'">
+                        <mat-option value="contains" select>Contém</mat-option>
+                        <mat-option value="equals">Igual</mat-option>
+                        <mat-option value="greaterThan">Maior que</mat-option>
+                        <mat-option value="lessThan">Menor que</mat-option>
+                        <mat-option value="endWith">Termina com</mat-option>
+                        <mat-option value="startWith">Inicia com</mat-option>
+                    </mat-select>
+
+                </mat-form-field>
+
+            </div>
+
+            <div class="mb-5 fullWidth">
+
+                <mat-form-field class="fullWidth" appearance="outline">
+                    <mat-label>Escreva um valor*</mat-label>
+                    <input matInput #searchValue type="text">
+                </mat-form-field>
+
+            </div>
+
+            <div class="fullWidth flex-row mb-5 flex-justify-space-between">
+
+                <button [disabled]="!searchValue.value" mat-raised-button color="primary" class="flex-row flex-align-center btn-filter-action" (click)="applyFilter(dataColumnName, selectedOperationFilter.value,  searchValue.value)">
+                  <mat-icon>check</mat-icon>
+                  <label>filter</label>
+                </button>
+
+                <button mat-raised-button class="flex-row flex-align-center btn-filter-action" color="warn" (click)="clearFilter(dataColumnName)">
+                  <mat-icon>clear</mat-icon>
+                  <label>reset</label>
+                </button>
+
+            </div>
+
+        </div>
+
+    </ng-template>
+
+</mat-menu>

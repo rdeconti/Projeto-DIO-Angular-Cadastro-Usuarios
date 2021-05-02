@@ -1,0 +1,36 @@
+<h1 mat-dialog-title>{{formAction}} User</h1>
+<div mat-dialog-content>
+    <form [formGroup]="formInstance">
+        <div>
+            <mat-form-field class="fullWidth" appearance="outline">
+                <mat-label>Nome *</mat-label>
+                <input matInput type="text" name="nome" formControlName="nome">
+                <mat-error *ngIf="formInstance.controls['nome']?.errors?.required">campo requerido</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="mt-5">
+            <mat-form-field class="fullWidth" appearance="outline">
+                <mat-label>Idade *</mat-label>
+                <input matInput type="number" name="idade" formControlName="idade" />
+                <mat-error *ngIf="formInstance.controls['idade']?.errors?.required">campo requerido</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="mt-5">
+            <mat-form-field class="fullWidth" appearance="outline">
+                <mat-label>Cargo *</mat-label>
+                <mat-select name="cargo" formControlName="cargo">
+                    <mat-option value="Caixa">Caixa</mat-option>
+                    <mat-option value="Gerente">Gerente</mat-option>
+                    <mat-option value="Segurança">Segurança</mat-option>
+                    <mat-option value="Assistente">Assistente</mat-option>
+                </mat-select>
+                <mat-error *ngIf="formInstance.controls['cargo']?.errors?.required">campo requerido</mat-error>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+
+<div class="mt-5" mat-dialog-actions>
+    <button mat-raised-button color="primary" [disabled]="formInstance.dirty && formInstance.errors" (click)="save()" cdkFocusInitial>Salvar</button>
+    <button mat-raised-button mat-dialog-close>Cancelar</button>
+</div>
