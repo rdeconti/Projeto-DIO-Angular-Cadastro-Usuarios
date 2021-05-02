@@ -19,10 +19,10 @@ Aprenda mais sobre Single Page Application e tenha como missão criar a sua prim
 
 # Desafios propostos:
 - Desafio proposto pela Digital Innovation One (Felipe Aguiar)
-<img src="https://github.com/rdeconti/Projeto-DIO-.Net-Vaquinha-On-Line/blob/main/Execution-tests/telas-aplicativo.jpg" />
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/documentation/Desafio%20-%20Digital%20Innovation%20One.jpg" />
 
 - Desafio proposto pela professora: Camila Ribeiro
-<img src="https://github.com/rdeconti/Projeto-DIO-.Net-Vaquinha-On-Line/blob/main/Execution-tests/telas-aplicativo.jpg" />
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/documentation/Desafio%20-%20Avanade.jpg" />
 
 - Tela inicial
 <img src="https://github.com/rdeconti/Projeto-DIO-.Net-Vaquinha-On-Line/blob/main/Execution-tests/telas-aplicativo.jpg" />
