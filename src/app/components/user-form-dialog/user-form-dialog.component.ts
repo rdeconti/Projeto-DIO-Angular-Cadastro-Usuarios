@@ -18,18 +18,18 @@ export class UserFormDialogComponent implements OnInit {
     this.formInstance = new FormGroup({
       "id":  new FormControl('', Validators.required),
       "nome": new FormControl('', Validators.required),
+      "idade": new FormControl('', Validators.required),
       "emailMain": new FormControl('', Validators.required),
       "emailAlternative": new FormControl('', Validators.required),
-      "idade": new FormControl('', Validators.required),
-      "cargo": new FormControl('', Validators.required),
+      "cargo": new FormControl('', Validators.required)
     });
 
     this.formInstance.setValue(data);
 
     if(data.id){
-      this.formAction = 'Editar usuário';
+      this.formAction = 'Alterar';
     }else{
-      this.formAction = 'Adicionar usuário';
+      this.formAction = 'Adicionar';
     }
   }
 

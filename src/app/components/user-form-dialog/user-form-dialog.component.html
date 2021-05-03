@@ -1,4 +1,4 @@
-<h1 mat-dialog-title>{{formAction}} User</h1>
+<h1 mat-dialog-title>{{formAction}} Usuário</h1>
 <div mat-dialog-content>
     <form [formGroup]="formInstance">
         <div>
@@ -18,15 +18,15 @@
         <div class="mt-5">
             <mat-form-field class="fullWidth" appearance="outline">
                 <mat-label>Email Principal *</mat-label>
-                <input matInput type="string" name="emailMain" formControlName="emailMain" />
+                <input matInput type="text" name="emailMain" formControlName="emailMain" />
                 <mat-error *ngIf="formInstance.controls['emailMain']?.errors?.required">campo requerido</mat-error>
             </mat-form-field>
         </div>
         <div class="mt-5">
             <mat-form-field class="fullWidth" appearance="outline">
                 <mat-label>Email Alternativo *</mat-label>
-                <input matInput type="string" name="emailAternative" formControlName="emailAternative" />
-                <mat-error *ngIf="formInstance.controls['emailAlternative']?.errors?.required">campo requerido</mat-error>
+                <input matInput type="text" name="emailAlternativo" formControlName="emailAlternative" />
+                <mat-error *ngIf="formInstance.controls['emailMain']?.errors?.required">campo requerido</mat-error>
             </mat-form-field>
         </div>
         <div class="mt-5">
