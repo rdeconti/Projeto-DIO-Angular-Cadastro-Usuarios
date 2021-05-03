@@ -21,10 +21,10 @@ Aprenda mais sobre Single Page Application e tenha como missão criar a sua prim
 # Desafios propostos:
 
 - Desafio proposto pela Digital Innovation One (Felipe Aguiar)
-<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/documentation/Desafio%20-%20Digital%20Innovation%20One.jpg" />
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/proposed_challenges/Desafio%20-%20Digital%20Innovation%20One.jpg" />
 
-- Desafio proposto pela professora: Camila Ribeiro
-<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/documentation/Desafio%20-%20Avanade.jpg" />
+- Desafio proposto pela Avanade (Camila Ribeiro)
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/proposed_challenges/Desafio%20-%20Avanade.jpg" />
 
 # O que foi realizado dos desafios propostos
 
@@ -65,26 +65,32 @@ Aprenda mais sobre Single Page Application e tenha como missão criar a sua prim
 - Colocar identificação de qual usuário está sendo excluído na tela de confirmação
 - Melhorar os títulos da lista inicial
 
-- Tela inicial
+# Tela inicial
 <img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-inicial.jpg" />
 
-- Tela com seleção de itens para página
+# Tela com seleção de itens para página
 <img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-sele%C3%A7%C3%A3o-itens.jpg" />
 
-- Tela com 50 itens por página
+# Tela com 50 itens por página
 <img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-com-50-itens.jpg" />
 
-- Tela com filtro por idade
+# Tela com filtro por idade
 <img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-com-filtro-idade.jpg" />
 
-- Tela com seleção de itens por idade
+# Tela com seleção de itens por idade
 <img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-sele%C3%A7%C3%A3o-por-idade.jpg" />
 
-- Tela com exclusão de registro
+# Tela com exclusão de registro
 <img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-exclus%C3%A3o-usu%C3%A1rio.jpg" />
 
-- Tela com alteração de registro
+# Tela com alteração de registro
 <img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-altera%C3%A7%C3%A3o-usu%C3%A1rio.jpg" />
 
-- Tela com inclusão de registro
-<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-altera%C3%A7%C3%A3o-usu%C3%A1rio.jpg" />
+# Tela com inclusão de registro - inicial
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-inclus%C3%A3o-inicial.jpg" />
+
+# Tela com inclusão de registro - intermediário
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-inclus%C3%A3o-intermediaria.jpg" />
+
+# Tela com inclusão de registro - resultado
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-inclus%C3%A3o-resultado.jpg" />
