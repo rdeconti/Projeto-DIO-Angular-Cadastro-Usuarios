@@ -28,7 +28,7 @@ Aprenda mais sobre Single Page Application e tenha como missão criar a sua prim
 
 # O que foi realizado dos desafios propostos
 
-- Utilizei a apresentação disponibilizda no projeto e também o conteúdo da aula de ANGULAR Básico para desenvolver esta solução
+- Utilizei a apresentação disponibilizada no projeto e também o conteúdo da aula de "ANGULAR Básico" da DIO para desenvolver esta solução
 - Foi criada uma aplicação ANGULAR para cadastrar usuários
 - Código da aplicação está disponibilizado no GitHub;
 - ter pelo menos 3 Componentes interagindo na mesma página: `user-list.component.html` tem estes componentes:
@@ -66,4 +66,25 @@ Aprenda mais sobre Single Page Application e tenha como missão criar a sua prim
 - Melhorar os títulos da lista inicial
 
 - Tela inicial
-<img src="https://github.com/rdeconti/Projeto-DIO-.Net-Vaquinha-On-Line/blob/main/Execution-tests/telas-aplicativo.jpg" />
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-inicial.jpg" />
+
+- Tela com seleção de itens para página
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-sele%C3%A7%C3%A3o-itens.jpg" />
+
+- Tela com 50 itens por página
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-com-50-itens.jpg" />
+
+- Tela com filtro por idade
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-com-filtro-idade.jpg" />
+
+- Tela com seleção de itens por idade
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-sele%C3%A7%C3%A3o-por-idade.jpg" />
+
+- Tela com exclusão de registro
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-exclus%C3%A3o-usu%C3%A1rio.jpg" />
+
+- Tela com alteração de registro
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-altera%C3%A7%C3%A3o-usu%C3%A1rio.jpg" />
+
+- Tela com inclusão de registro
+<img src="https://github.com/rdeconti/Projeto-DIO-Angular-Cadastro-Usuarios/blob/master/screens_with_tests/tela-altera%C3%A7%C3%A3o-usu%C3%A1rio.jpg" />
